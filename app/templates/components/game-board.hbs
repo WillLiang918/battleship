@@ -1,0 +1,11 @@
+<table class="board-container">
+  {{#each rows as |row row_idx|}}
+    <tr>
+      {{#each row as |cell col_idx|}}
+        <td>
+          {{board-cell cell=cell row=row_idx col=col_idx selectTile='selectTile'}}
+        </td>
+      {{/each}}
+    </tr>
+  {{/each}}
+</table>
