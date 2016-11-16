@@ -1,5 +1,5 @@
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
-var funnel = require('ember-cli/node_modules/broccoli-funnel');
+var Funnel = require('broccoli-funnel');
 var mergeTrees = require('broccoli-merge-trees');
 
 module.exports = function(defaults) {
