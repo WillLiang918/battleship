@@ -1,0 +1,24 @@
+<h1 class="leaderboard">Top 10 Leaderboard</h1>
+
+<table class="leaderboard-container">
+  <thead>
+  <tr>
+    <th class="initials">INITIALS</th>
+    <th class="win-time">TIME(s)</th>
+  </tr>
+  </thead>
+  <tbody>
+  {{#each model.leaderboard as |game|}}
+    <tr class="leader"{{action 'goToGame' game.id}}>
+      <td>{{game.initials}}</td>
+      <td>{{game.win_time}}</td>
+    </tr>
+  {{/each}}
+  </tbody>
+</table>
+
+<div class="text-center button-container">
+  <button class="btn btn-primary start-button" {{action 'createNewGame'}}>
+    New Game
+  </button>
+</div>

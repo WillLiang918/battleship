@@ -1,0 +1,33 @@
+<div class="row">
+  <h1 class="game-title">BATTLESHIP</h1>
+  <h3 class="instruction">{{gameMessage}}</h3>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3">
+      <h2>Player</h2>
+      <h4>Ships Remaining: {{remainingPlayerShips}}</h4>
+      <h4>Last move: {{playersLastMove}}</h4>
+    </div>
+
+    <div class="col-sm-6">
+      {{game-board rows=rows selectTile='selectTile'}}
+
+      <div class="text-center button-container">
+        <button class="btn btn-primary start-button" {{action 'returnToHome'}}>
+          Home
+        </button>
+        <button class="btn btn-primary" {{action 'createNewGame'}}>
+          New Game
+        </button>
+      </div>
+    </div>
+
+    <div class="col-sm-3">
+      <h2>Computer</h2>
+      <h4>Ships Remaining: {{remainingComputerShips}}</h4>
+      <h4>Last move: {{computersLastMove}}</h4>
+    </div>
+  </div>
+</div>
