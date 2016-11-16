@@ -12,7 +12,7 @@ export default Ember.Component.extend({
   
   imgSource: function () {
     if (this.get('cell').has_player_ship) {
-      return "http://icons.iconarchive.com/icons/unclebob/spanish-travel/48/ship-icon.png";
+      return "https://icons.iconarchive.com/icons/unclebob/spanish-travel/48/ship-icon.png";
     }
   }.property('cell'),
   
