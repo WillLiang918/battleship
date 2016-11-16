@@ -1,0 +1,69 @@
+body {
+  background-color: lightgray;
+}
+
+.game-title, .leaderboard {
+  text-align: center;
+}
+
+.instruction {
+  text-align: center;
+}
+
+.leaderboard-container {
+  text-align: center;
+  margin: 0 auto;
+  tr, td {
+    padding: 5px;
+  }
+  .leader:hover {
+    cursor: pointer;
+    font-weight: bolder;
+    transform: scale(1.1);
+  }
+}
+
+.board-container {
+  margin: 0 auto;
+}
+
+.initials, .win-time {
+  text-align: center;
+  width: 30%;
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  margin: 5px;
+  //background-color: white;
+  background-color: lightblue;
+}
+
+.hit {
+  background-color: red;
+}
+
+.checked {
+  background-color: white;
+  //background-color: blue;
+}
+
+.cell:hover {
+  transform: scale(1.3);
+  box-shadow: inset 0 0 0 1px blue
+}
+
+.start-button-container {
+  padding-top: 10px;
+}
+
+.button-container {
+  margin: 15px auto;
+  width: 300px;
+  * {
+    font-size: 20px;
+    width: 145px;
+  }
+}
